@@ -3,7 +3,6 @@
 ## BPCTF
 | Challenge | Category | Flag |
 |-----------|----------|------|
-
 | Phantom | RE | `BPCTF{phantom_runtime_engine}` |
 | Rolling Silence | RE | `BPCTF{registers_are_state}` |
 | Rusty Frame | RE | `BPCTF{stand_proud_mate}` |
