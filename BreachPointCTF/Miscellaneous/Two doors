@@ -1,1 +1,49 @@
+# **Two doors**
 
+Challenge Name: ****Two doors**
+
+Category: **Miscellaneous**
+
+Player Name : Uddip Das ([Evi1iXer](https://ctf7.com/accounts/profile/Evi1iXer/))
+
+---
+
+**Challenge Solved Description:**
+
+This challenge required tracking down a flag hidden in a Discord moderator's profile picture, starting from a broken URL.
+
+---
+
+### Step 1: The Broken Link
+
+The challenge provided the following URL:
+
+`https://chatgpt.com/share/6990cbe8-60d4-8010-ac07-7e9c6eb9d98f`
+
+Navigating to it returned a **404 error**. Rather than giving up, I noticed the URL structure and attempted to **swap the last two characters** of the share ID (`8f` → `f8` or similar), which revealed a valid, accessible shared ChatGPT conversation.
+
+---
+
+### Step 2: Extracting Clues from the Chat
+
+The recovered conversation contained a clue pointing to **Discord**, specifically referencing a moderator account:
+
+- **MOD Name:** Seshan
+- **Discord Username:** `vividverse1625`
+
+---
+
+### Step 3: Discord Profile Investigation
+
+Searching for `vividverse1625` on Discord and navigating to their profile revealed that the user held a **Moderator role**. The **profile picture (avatar)** was identified as the flag location.
+
+![image.png](attachment:749affd9-2bc7-4dea-be38-adf6c05a7994:image.png)
+
+Examining the avatar closely, the flag was embedded in the image text/design.
+
+**Flag:** `BPCTF{birthday_gift_from_atlee}`
+
+### Takeaway
+
+- Don't assume a 404 error means a broken link in these challenges. Try simple modifications like swapping characters, changing case, or adjusting IDs before exploring other options.
+- Shared links can reveal sensitive data. Publicly sharing ChatGPT conversations risks exposing private information. In CTF events, such links often serve as clues.
